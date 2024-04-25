@@ -45,7 +45,7 @@ export async function extractJdkFile(toolPath: string, extension?: string) {
       return await tc.extractTar(toolPath);
     case 'zip':
       return await tc.extractZip(toolPath);
-    case 'xz':
+    case 'tar.xz':
       return await tc.extractTar(toolPath);
     default:
       return await tc.extract7z(toolPath);
