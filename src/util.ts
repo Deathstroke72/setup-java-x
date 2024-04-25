@@ -30,26 +30,7 @@ export function getVersionFromToolcachePath(toolPath: string) {
 }
 
 export async function extractJdkFile(toolPath: string, extension?: string) {
-  if (!extension) {
-    extension = toolPath.endsWith('.tar.gz')
-      ? 'tar.gz'
-      : path.extname(toolPath);
-    if (extension.startsWith('.')) {
-      extension = extension.substring(1);
-    }
-  }
-
-  switch (extension) {
-    case 'tar.gz':
-    case 'tar':
-      return await tc.extractTar(toolPath);
-    case 'zip':
-      return await tc.extractZip(toolPath);
-    case 'tar.xz':
-      return await tc.extractTar(toolPath);
-    default:
-      return await tc.extract7z(toolPath);
-  }
+  return await tc.extractTar(toolPath);
 }
 
 export function getDownloadArchiveExtension() {
