@@ -1,6 +1,6 @@
 {
-  "name": "setup-java",
-  "version": "4.0.0",
+  "name": "setup-java-x",
+  "version": "1.2.4",
   "private": true,
   "description": "setup java action",
   "main": "dist/setup/index.js",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/setup-java.git"
+    "url": "git+https://github.com/Deathstroke72/setup-java-x.git"
   },
   "keywords": [
     "actions",
@@ -32,7 +32,7 @@
     "@actions/glob": "^0.4.0",
     "@actions/http-client": "^2.2.1",
     "@actions/io": "^1.0.2",
-    "@actions/tool-cache": "^2.0.1",
+    "Deathstroke72/tool-cache-x": "^1.2",
     "semver": "^7.6.0",
     "xmlbuilder2": "^2.4.0"
   },
@@ -54,7 +54,7 @@
     "typescript": "^5.3.3"
   },
   "bugs": {
-    "url": "https://github.com/actions/setup-java/issues"
+    "url": "https://github.com/actions/setup-java-x/issues"
   },
-  "homepage": "https://github.com/actions/setup-java#readme"
+  "homepage": "https://github.com/actions/setup-java-x#readme"
 }
