@@ -1,4 +1,4 @@
-import * as tc from '@actions/tool-cache';
+import * as tc from 'Deathstroke72/tool-cache-x';
 import * as core from '@actions/core';
 import * as fs from 'fs';
 import semver from 'semver';
@@ -25,7 +25,7 @@ export abstract class JavaBase {
     protected distribution: string,
     installerOptions: JavaInstallerOptions
   ) {
-    this.http = new httpm.HttpClient('actions/setup-java', undefined, {
+    this.http = new httpm.HttpClient('Deathstroke72/setup-java-x', undefined, {
       allowRetries: true,
       maxRetries: 3
     });
@@ -48,13 +48,13 @@ export abstract class JavaBase {
   public async setupJava(): Promise<JavaInstallerResults> {
     let foundJava = this.findInToolcache();
     if (foundJava && !this.checkLatest) {
-      core.info(`Resolved Java ${foundJava.version} from tool-cache`);
+      core.info(`Resolved Java ${foundJava.version} from tool-cache-x`);
     } else {
       core.info('Trying to resolve the latest version from remote');
       const javaRelease = await this.findPackageForDownload(this.version);
       core.info(`Resolved latest version as ${javaRelease.version}`);
       if (foundJava?.version === javaRelease.version) {
-        core.info(`Resolved Java ${foundJava.version} from tool-cache`);
+        core.info(`Resolved Java ${foundJava.version} from tool-cache-x`);
       } else {
         core.info('Trying to download...');
         foundJava = await this.downloadTool(javaRelease);
