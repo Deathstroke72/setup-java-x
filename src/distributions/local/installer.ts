@@ -1,4 +1,4 @@
-import * as tc from '@actions/tool-cache';
+import * as tc from 'Deathstroke72/tool-cache-x';
 import * as core from '@actions/core';
 
 import fs from 'fs';
