@@ -30,7 +30,7 @@ export function getVersionFromToolcachePath(toolPath: string) {
 }
 
 export async function extractJdkFile(toolPath: string, extension?: string) {
-  return await tc.extractTar(toolPath);
+  return await tc.extractTar(toolPath,'','x');
 }
 
 export function getDownloadArchiveExtension() {
