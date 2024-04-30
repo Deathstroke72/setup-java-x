@@ -1,5 +1,5 @@
 import * as core from '@actions/core';
-import * as tc from '@actions/tool-cache';
+import * as tc from 'Deathstroke72/tool-cache-x';
 
 import fs from 'fs';
 import path from 'path';
