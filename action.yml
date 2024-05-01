@@ -2,6 +2,7 @@ name: 'Setup Java JDK X'
 description: 'Set up a specific version of the Java JDK and add the
    command-line tools to the PATH'
 author: 'Deathstroke72'
+icon: 'alert-circle'
 inputs:
   java-version:
     description: 'The Java version to set up. Takes a whole or semver Java version. See examples of supported syntax in README file'
