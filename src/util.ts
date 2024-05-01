@@ -5,7 +5,7 @@ import * as semver from 'semver';
 import * as cache from '@actions/cache';
 import * as core from '@actions/core';
 
-import * as tc from 'Deathstroke72/tool-cache-x';
+import * as tc from '@actions/tool-cache';
 import {INPUT_JOB_STATUS, DISTRIBUTIONS_ONLY_MAJOR_VERSION} from './constants';
 import {OutgoingHttpHeaders} from 'http';
 
